@@ -77,6 +77,8 @@ box["size"] = {
     "width": 80
 };
 
+box[0] = 'meow';
+
 //console.log(box["size"]["height"]);
 //console.log(box['size']['width']);
 
@@ -86,8 +88,8 @@ box.area = function area() {
 
 //console.log(box);
 
-
-for (var prop in box) {
+var prop;
+for (prop in box) {
 	//console.log(prop);
-	console.log(box[prop]);
+	console.log(box[prop]+ ' and its Property Key is: ' + prop);
 }
